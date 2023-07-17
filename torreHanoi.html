@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="torre.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Torres de Hanoi</title>
+</head>
+<body>
+    <h1>Torres de Hanoi</h1>
+
+    <input type="number" name="" id="discos">
+
+    <div class="towers">
+        <div class="tower" id="tower1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="tower" id="tower2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="tower" id="tower3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    </div>
+    <div class="content">
+            <button class="boton magico" onclick="limpiar(); hanoi(document.getElementById('discos').value, 'A' , 'B', 'C')">Solucion</button>
+            <button class="boton magico" onclick="dibujar()">Dar Discos</button>
+    </div>
+    <div id="solution"></div>
+    <script> 
+        
+    </script>
+</body>
+</html>
