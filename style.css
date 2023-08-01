@@ -1,27 +1,23 @@
-
 .towers{
             display: flex;
             justify-content: center;
 
         }
-
 .tower {
             display: flex;
             border: 3px solid black;
-            width: 200px;
-            height: 230px;
+            width: 300px;
+            height: 280px;
             margin: 10px;
             vertical-align: bottom;
             flex-direction: column-reverse;
             align-items: center;  
  
-        }
-        
+        }     
 .towers::before{
     border-color: blue;
     border-width: 20px;
-}
-        
+}       
 .disk {
         background: linear-gradient(45deg ,antiquewhite, purple, white, pink, white);
         background-size: 800%;
@@ -31,7 +27,6 @@
         margin: 2px;
         cursor: pointer;
         }
-
 .content{
     gap: 20px;
     position: relative;
@@ -39,7 +34,6 @@
     align-items: center;
     justify-content: center;
 }
-
 /**
 .btn{
     width: 8.5em;
@@ -82,7 +76,6 @@ button:hover:after
 }
 
 */
-
 button{
     margin-top: 18px;
     background: black;
@@ -96,7 +89,6 @@ button{
     border-radius: 12px;
     
 }
-
 button::before{
     content: "";
     position: absolute;
@@ -111,7 +103,6 @@ button::before{
     filter: blur(8px);
     animation: glowing 20s linear infinite;
 }
-
 @keyframes glowing{
     0% {
         background-position: 0 0;      
@@ -124,4 +115,13 @@ button::before{
     100% {
         background-position: 0 0;
     }
+}
+.guia{
+    background-color: rgb(105, 177, 200);
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    columns: 2;
+    flex-direction: column;
 }

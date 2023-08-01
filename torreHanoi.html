@@ -3,11 +3,13 @@
 <head>
     <script src="torre.js"></script>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2.all.min.js"></script>
     <title>Torres de Hanoi</title>
 </head>
 <body>
     <h1>Torres de Hanoi</h1>
-
+    <p>Ingresa el número de Discos:</p>
     <input type="number" name="" id="discos">
 
     <div class="towers">
@@ -16,8 +18,10 @@
         <div class="tower" id="tower3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
     </div>
     <div class="content">
-            <button class="boton magico" onclick="limpiar(); hanoi(document.getElementById('discos').value, 'A' , 'B', 'C')">Solucion</button>
             <button class="boton magico" onclick="dibujar()">Dar Discos</button>
+            <button class="boton magico" onclick="limpiar(); hanoi(document.getElementById('discos').value, 'A' , 'B', 'C')">Solucion</button>
+            <button class="boton magico" onclick="reiniciar()">Reiniciar Juego</button>
+
     </div>
     <div id="solution"></div>
     <script> 
